@@ -24,11 +24,17 @@ window.FIRM = {
 
   /* Public (published) URLs of the calculators built in Lovable - shown on the Tools page.
      An empty value shows the button as "Link coming soon". */
+  /* Published Lovable apps (hidden until the sample client address is removed from them):
+       trusscalc  https://rextruss.lovable.app             Roof Truss Planner  (TrussCalc)
+       studcalc   https://stud-buddy-calculatr.lovable.app Stud Wall Calculator (StudCalc)
+       joistcalc  https://rexreport.lovable.app            Structure Genius    (JoistCalc)
+       strutura   https://steel-truss-builder.lovable.app  Truss Report Master (STRUTURA)
+     Paste a URL back in below to show that app's button again. */
   apps: {
-    trusscalc: "https://rextruss.lovable.app",            // Roof Truss Planner  (TrussCalc)
-    studcalc: "https://stud-buddy-calculatr.lovable.app", // Stud Wall Calculator (StudCalc)
-    joistcalc: "https://rexreport.lovable.app",           // Structure Genius    (JoistCalc)
-    strutura: "https://steel-truss-builder.lovable.app"   // Truss Report Master (STRUTURA steel truss)
+    trusscalc: "",
+    studcalc: "",
+    joistcalc: "",
+    strutura: ""
   },
 
   fiverr: {
