@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Engineering Tools | REX ENGINEERING</title>
+<meta name="description" content="Structural engineering tools: roof truss calculator, wood stud wall calculator, joist calculator, steel truss design and a truss geometry estimator.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Engineering Tools | REX ENGINEERING">
+<meta name="theme-color" content="#081c36">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css?v=da7cafcad4">
+</head>
+<body data-page="tools">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+  <section class="section section--dark page-head">
+    <div class="wrap">
+      <div class="crumbs">Home / Tools</div>
+      <h1>Engineering tools.</h1>
+      <p>Calculators we built for our own design work: they check members to NDS, AISC and ASCE 7 and produce Tedds-style calculation reports you can print to PDF.</p>
+    </div>
+  </section>
+
+  <section class="section section--paper" style="padding-top:44px">
+    <div class="wrap">
+      <p class="disclaimer"><b>For qualified users.</b> These tools support preliminary design and checking. Results depend on the inputs and assumptions you enter and must be reviewed by a licensed engineer before they are used for construction or permit submittal.</p>
+
+      <div class="toolgrid">
+        <article class="toolcard" id="trusscalc">
+          <div class="toolcard__shot"><img loading="lazy" src="assets/tools/trusscalc.webp" alt="TrussCalc roof truss calculator showing inputs and a roof truss design calculation report"></div>
+          <div class="toolcard__body">
+            <span class="eyebrow">Wood · roof trusses</span>
+            <h2>TrussCalc &mdash; Roof Truss Calculator</h2>
+            <p>Sawn-lumber, pin-jointed roof truss analysis and member checks, with a full calculation report.</p>
+            <ul class="ticks">
+              <li>Fink, king-post, queen-post, parallel-chord and custom / hybrid truss layouts</li>
+              <li>Member forces, combined stress checks and joint visualisation</li>
+              <li>Multiple trusses per report; export results to PDF or CSV</li>
+            </ul>
+            <div class="chips"><span class="chip">NDS-2024</span><span class="chip">2025 CBC / 2024 IBC</span><span class="chip">ASCE 7-22</span></div>
+            <p class="toolcard__cta"><a class="btn btn--primary" data-app="trusscalc" href="#" rel="noopener" target="_blank">Open TrussCalc ↗</a></p>
+          </div>
+        </article>
+
+        <article class="toolcard" id="studcalc">
+          <div class="toolcard__shot"><img loading="lazy" src="assets/tools/studcalc.webp" alt="StudCalc wood stud wall calculator showing a load-bearing wall design calculation"></div>
+          <div class="toolcard__body">
+            <span class="eyebrow">Wood · bearing walls</span>
+            <h2>StudCalc &mdash; Wood Stud Wall Calculator</h2>
+            <p>Load-bearing wood stud walls checked for combined axial compression and out-of-plane wind bending.</p>
+            <ul class="ticks">
+              <li>Wall geometry, stud size / spacing, plates and sheathing bracing</li>
+              <li>Door and window openings with headers, trimmers and cripples</li>
+              <li>Connection and anchorage schedule (automatic or manual) and strip-footing bearing checks</li>
+            </ul>
+            <div class="chips"><span class="chip">NDS-2024</span><span class="chip">2025 CBC / 2024 IBC</span><span class="chip">ASCE 7-22</span></div>
+            <p class="toolcard__cta"><a class="btn btn--primary" data-app="studcalc" href="#" rel="noopener" target="_blank">Open StudCalc ↗</a></p>
+          </div>
+        </article>
+
+        <article class="toolcard" id="joistcalc">
+          <div class="toolcard__shot"><img loading="lazy" src="assets/tools/joistcalc.webp" alt="JoistCalc joist calculator showing a framing schedule of member checks"></div>
+          <div class="toolcard__body">
+            <span class="eyebrow">Wood · floor &amp; roof joists</span>
+            <h2>JoistCalc &mdash; Sawn Lumber &amp; TJI Joist Calculator</h2>
+            <p>Multi-member joist checks with a framing schedule summary and step-by-step calculation sheets.</p>
+            <ul class="ticks">
+              <li>Sawn-lumber and TJI&reg; engineered I-joists, multiple spans and members per report</li>
+              <li>Load, bending-moment, shear and deflection diagrams</li>
+              <li>Summary schedule of demand / capacity ratios with pass / fail</li>
+            </ul>
+            <div class="chips"><span class="chip">NDS-2018 / NDS-2024</span><span class="chip">2025 CBC / 2024 IBC</span><span class="chip">ASCE 7-22</span></div>
+            <p class="toolcard__cta"><a class="btn btn--primary" data-app="joistcalc" href="#" rel="noopener" target="_blank">Open JoistCalc ↗</a></p>
+          </div>
+        </article>
+
+        <article class="toolcard" id="strutura">
+          <div class="toolcard__shot"><img loading="lazy" src="assets/tools/strutura.webp" alt="STRUTURA steel truss design tool showing a Pratt roof truss analytical model"></div>
+          <div class="toolcard__body">
+            <span class="eyebrow">Steel · trusses</span>
+            <h2>STRUTURA &mdash; Steel Truss Design</h2>
+            <p>Analytical model and LRFD member design for steel roof trusses, with a three-page calculation report.</p>
+            <ul class="ticks">
+              <li>Truss library (Pratt and more), spans, rise, panels and spacing</li>
+              <li>HSS, channel and I-section members for chords, verticals and diagonals</li>
+              <li>Governing ratio, displacements and reactions; printable calculation report</li>
+            </ul>
+            <div class="chips"><span class="chip">AISC 360-22</span><span class="chip">ASCE 7-22</span><span class="chip">LRFD</span></div>
+            <p class="toolcard__cta"><a class="btn btn--primary" data-app="strutura" href="#" rel="noopener" target="_blank">Open STRUTURA ↗</a></p>
+          </div>
+        </article>
+
+        <article class="toolcard" id="estimator">
+          <div class="toolcard__shot toolcard__shot--svg" aria-hidden="true">
+            <svg viewBox="-8 -24 116 34"><path d="M-6 3 L50 -20 L106 3 M0 0 H100 M0 0 L50 -20 M25 -10 L33.3 0 L50 -20 L66.6 0 L75 -10" fill="none" stroke="#4cc3ff" stroke-width="1.4" stroke-linejoin="round"/><path d="M0 0 l-3 4 h6z M100 0 l-3 4 h6z" fill="none" stroke="#9cc2ef" stroke-width=".8"/></svg>
+          </div>
+          <div class="toolcard__body">
+            <span class="eyebrow">Free · runs in your browser</span>
+            <h2>Truss Geometry &amp; Count Estimator</h2>
+            <p>Quick geometry for six common truss types: run, rise, top-chord lengths with overhang, overall width and the number of trusses for a building length.</p>
+            <ul class="ticks">
+              <li>Fink, Howe, king-post, queen-post, scissor and attic profiles</li>
+              <li>Live schematic diagram and results table</li>
+            </ul>
+            <div class="chips"><span class="chip">Geometry &amp; quantity only</span></div>
+            <p class="toolcard__cta"><a class="btn btn--primary" href="truss-estimator.html">Open estimator &rarr;</a></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--dark cta">
+    <div class="wrap">
+      <h2>Need the calculations done for you?</h2>
+      <p>We use these tools on real projects and stand behind the full design package.</p>
+      <div class="actions"><a class="btn btn--primary" href="contact.html">Request a quote</a><a class="btn btn--ghost" href="projects.html">See the work</a></div>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/config.js?v=da7cafcad4"></script>
+<script src="js/projects-data.js?v=da7cafcad4"></script>
+<script src="js/site.js?v=da7cafcad4"></script>
+</body>
+</html>

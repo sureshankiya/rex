@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | REX ENGINEERING</title>
+<meta name="description" content="Request a structural engineering quote from REX ENGINEERING — steel, concrete, masonry and wood structures.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact | REX ENGINEERING">
+<meta name="theme-color" content="#081c36">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/styles.css?v=da7cafcad4">
+</head>
+<body data-page="contact">
+<a class="skip" href="#main">Skip to content</a>
+<header id="site-header"></header>
+<main id="main">
+  <section class="section section--dark page-head">
+    <div class="wrap">
+      <div class="crumbs">Home / Contact</div>
+      <h1>Request a quote.</h1>
+      <p>Tell us about the project. We&rsquo;ll confirm scope, fee and schedule.</p>
+    </div>
+  </section>
+  <section class="section section--paper" style="padding-top:44px">
+    <div class="wrap contact-grid">
+      <form class="form panel" id="contactForm" novalidate>
+        <div class="two">
+          <label class="f">Your name<input name="name" autocomplete="name" required></label>
+          <label class="f">Email<input name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <div class="two">
+          <label class="f">Project type<select name="ptype" id="ptype"></select></label>
+          <label class="f">Project location (city, state / country)<input name="city" autocomplete="off"></label>
+        </div>
+        <label class="f">Project details<textarea name="message" id="message" placeholder="Scope, structure type, existing conditions, plan-check comments, schedule..." required></textarea></label>
+        <label class="f" id="uploadRow" hidden>Drawings / photos (optional)<input type="file" name="attachment" multiple accept=".pdf,.dwg,.dxf,.jpg,.jpeg,.png"></label>
+        <div><button class="btn btn--primary" type="submit">Send request</button></div>
+        <p class="status" id="status" role="status"></p>
+      </form>
+      <aside>
+        <div class="panel">
+          <h3>What to send</h3>
+          <ol class="checklist">
+            <li>Architectural plans, shop drawings or sketches (PDF or DWG)</li>
+            <li>Project location, so we apply the right code</li>
+            <li>Soils / geotechnical report, if available</li>
+            <li>Photos of existing framing and foundations (for existing buildings)</li>
+            <li>Any plan-check or consultant comments to answer</li>
+          </ol>
+        </div>
+        <div class="panel" style="margin-top:20px">
+          <h3>Get in touch</h3>
+          <div class="kv">
+            <div><b>Email</b><a data-firm="email" href="#">&nbsp;</a></div>
+            <div data-firm="phone-row"><b>Phone</b><span data-firm="phone"></span></div>
+            <div><b>Fiverr</b><a data-firm="fiverr" href="#" rel="noopener" target="_blank">Order or message on Fiverr ↗</a></div>
+            <div><b>Service area</b><span data-firm="area"></span></div>
+          </div>
+          <p class="note" style="margin-top:22px">If the form can&rsquo;t send directly, it opens your email app with the message filled in &mdash; attach your drawings there. Nothing is stored on this site.</p>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/config.js?v=da7cafcad4"></script>
+<script src="js/projects-data.js?v=da7cafcad4"></script>
+<script src="js/site.js?v=da7cafcad4"></script>
+</body>
+</html>
