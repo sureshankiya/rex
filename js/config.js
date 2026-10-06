@@ -8,11 +8,10 @@ window.FIRM = {
   tagline: "Structural engineering for steel, concrete, masonry and wood structures.",
   principal: "Suresh A.",                // as shown on the public Fiverr profile; set "" to hide
 
-  /* PLACEHOLDERS - replace with real details.  ".example" is a reserved
-     domain, so nothing can be sent to a stranger by accident. */
-  email: "info@rexengineering.example",
+  /* Contact details shown across the site (header, footer, contact form). */
+  email: "sureshankiya9982@gmail.com",
   phone: "",                       // e.g. "(555) 123-4567"  (hidden while empty)
-  siteUrl: "https://www.rexengineering.example",   // used for sitemap.xml / canonical links (tools/build_pages.py)
+  siteUrl: "https://sureshankiya.github.io/rex",   // used for sitemap.xml / canonical links (tools/build_pages.py)
   serviceArea: "Remote structural engineering for projects across the United States, India and internationally",
 
   /* Optional: a form-handling endpoint (e.g. Formspree / Web3Forms URL).  When set, the
