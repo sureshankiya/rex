@@ -1902,6 +1902,162 @@ window.PROJECTS = [
     ]
   },
   {
+    "id": "g1-rcc-residential-building-india",
+    "title": "G+1 RCC Residential Building",
+    "city": "India",
+    "category": "Residential & ADU",
+    "featured": false,
+    "size": "Ground + 1 · 3.2 m storey height · 22 columns",
+    "summary": "Analysis, design and complete reinforcement detailing for a two-storey RCC framed house: STAAD.Pro frame model, STAAD Foundation footings and RCDC detailing.",
+    "scope": [
+      "3D RCC frame in STAAD.Pro with wall, slab and parapet loads applied to the beams",
+      "Shear force, bending moment and support-reaction results for design",
+      "22 isolated pad footings (FC1–FC22, 1000 × 900 mm to 1350 × 1200 mm, 300–325 mm deep) with footing schedule and sections",
+      "Column schedule and details (230 × 350 and 230 × 400 mm columns), beam schedule and sections (230 × 300 mm beams)",
+      "150 mm two-way slabs with reinforcement schedule, bottom-reinforcement layout and section",
+      "Design basis: M25 concrete and Fe 500 / Fe 500D bars to IS 1786; main wall 13.98 kN/m, partition 6.08 kN/m, slab dead load 4.75 kN/m², live load 2.0 kN/m²"
+    ],
+    "codes": [
+      "IS 456:2000",
+      "IS 875",
+      "IS 1893 (Part 1):2016",
+      "IS 13920:2016",
+      "IS 1786"
+    ],
+    "software": [
+      "STAAD.Pro",
+      "STAAD Foundation",
+      "RCDC"
+    ],
+    "sheets": [
+      {
+        "src": "assets/projects/g1-rcc-residential-building-india/cover.webp",
+        "caption": "3D analytical model and rendered frame",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g1-rcc-residential-building-india/s01.webp",
+        "caption": "Shear force, bending moment and base reactions",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g1-rcc-residential-building-india/s02.webp",
+        "caption": "Footing schedule, layout and sections",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g1-rcc-residential-building-india/s03.webp",
+        "caption": "Column schedule and details",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g1-rcc-residential-building-india/s04.webp",
+        "caption": "Column cross-section schedule",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g1-rcc-residential-building-india/s05.webp",
+        "caption": "Beam layout, sections and details",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g1-rcc-residential-building-india/s06.webp",
+        "caption": "Slab schedule, bottom-reinforcement layout and section",
+        "portrait": false
+      }
+    ],
+    "cover": "assets/projects/g1-rcc-residential-building-india/cover.webp",
+    "coverIndex": 0
+  },
+  {
+    "id": "g3-rcc-apartment-building-india",
+    "title": "G+3 RCC Apartment Building",
+    "city": "India",
+    "category": "Residential & ADU",
+    "featured": false,
+    "size": "Ground + 3 · 3.2 m storey height · lift core",
+    "summary": "ETABS analysis, SAFE foundation design and RCDC detailing for a four-storey RCC apartment block with a lift core and staircase.",
+    "scope": [
+      "ETABS model of the frame, slabs and lift core with wall, slab and staircase loads",
+      "Shear force, bending moment, axial force and support-reaction results",
+      "Column longitudinal reinforcement and reinforcement-percentage check from the design model",
+      "Isolated footings in SAFE with footing schedule, layout and sections",
+      "Column schedule (230 × 450 mm columns and a 640 × 2970 mm lift-core pier), beam, slab and staircase reinforcement details",
+      "Design basis: M25 concrete, Fe 500 / Fe 500D bars; 150 mm slabs, 230 × 300 mm beams; staircase dead load 7 kN/m², live load 3 kN/m²; main wall 13.89 kN/m, partition 6.09 kN/m"
+    ],
+    "codes": [
+      "IS 456:2000",
+      "IS 875",
+      "IS 1893 (Part 1):2016",
+      "IS 13920:2016",
+      "IS 1786"
+    ],
+    "software": [
+      "ETABS",
+      "SAFE",
+      "RCDC"
+    ],
+    "sheets": [
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/cover.webp",
+        "caption": "Rendered exterior and interior views",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s01.webp",
+        "caption": "Grid plan and 3D model",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s02.webp",
+        "caption": "Shear force and bending moment diagrams",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s03.webp",
+        "caption": "Axial forces and support reactions",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s04.webp",
+        "caption": "Column longitudinal reinforcement and reinforcement percentage",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s05.webp",
+        "caption": "Footing schedule, layout and sections",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s06.webp",
+        "caption": "Column schedule and details",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s07.webp",
+        "caption": "Column and lift-core cross-section schedule",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s08.webp",
+        "caption": "Beam details and schedule",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s09.webp",
+        "caption": "Slab sections and schedule",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-rcc-apartment-building-india/s10.webp",
+        "caption": "Staircase details and slab layout",
+        "portrait": false
+      }
+    ],
+    "cover": "assets/projects/g3-rcc-apartment-building-india/cover.webp",
+    "coverIndex": 0
+  },
+  {
     "id": "master-bedroom-addition-spring-valley",
     "title": "Master Bedroom Addition with CMU Foundation",
     "city": "Spring Valley, CA",
