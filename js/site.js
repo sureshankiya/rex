@@ -252,7 +252,7 @@
     var pre = new URLSearchParams(location.search).get("project");
     if (pre) $("#message").value = "Re: " + pre + "\n\n";
     var upload = $("#uploadRow");
-    if (upload) upload.hidden = !F.formEndpoint;
+    if (upload) upload.hidden = !F.formEndpoint || F.formUploads === false;
     var out = $("#status");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -265,7 +265,11 @@
         out.textContent = "Sending...";
         fetch(F.formEndpoint, { method: "POST", body: d, headers: { Accept: "application/json" } })
           .then(function (r) {
-            if (!r.ok) throw new Error(r.status);
+            return r.json().catch(function () { return {}; }).then(function (j) {
+              if (!r.ok || j.success === false || j.success === "false") throw new Error(j.message || r.status);
+            });
+          })
+          .then(function () {
             form.reset();
             out.textContent = "Thanks - your request has been sent. We'll reply by email.";
           })

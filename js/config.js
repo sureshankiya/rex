@@ -14,9 +14,12 @@ window.FIRM = {
   siteUrl: "https://rexengineering.tech",   // used for sitemap.xml / canonical links (tools/build_pages.py)
   serviceArea: "Remote structural engineering for projects across the United States, India and internationally",
 
-  /* Optional: a form-handling endpoint (e.g. Formspree / Web3Forms URL).  When set, the
-     contact form posts to it (with plan uploads); while empty it opens the visitor's email app. */
-  formEndpoint: "",
+  /* Form-handling endpoint.  When set, the contact form posts to it; while empty it opens the
+     visitor's email app.  FormSubmit needs no account: the first submission sends an activation
+     e-mail to the address below - click "Activate Form" once.  FormSubmit's AJAX endpoint does not
+     accept file uploads, so formUploads stays false (switch to a Formspree URL to allow uploads). */
+  formEndpoint: "https://formsubmit.co/ajax/sureshankiya9982@gmail.com",
+  formUploads: false,
 
   /* Shown on the About page only when filled in, e.g.
      ["Professional Engineer, State of California - License No. ____"] */
