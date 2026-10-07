@@ -5,7 +5,8 @@ window.CATEGORIES = [
   "Connections & Anchorage",
   "Foundations & Special Structures",
   "Residential & ADU",
-  "Additions, Remodels & Repairs"
+  "Additions, Remodels & Repairs",
+  "Structural Analysis & Modelling"
 ];
 window.PROJECTS = [
   {
@@ -803,6 +804,108 @@ window.PROJECTS = [
         "portrait": true
       }
     ]
+  },
+  {
+    "id": "g3-multipurpose-hall-karnal",
+    "title": "G+3 RCC Multipurpose Hall",
+    "city": "Karnal, Haryana, India",
+    "category": "Commercial & Industrial",
+    "featured": false,
+    "size": "G+3 · RCC moment frame · 10 × 2 bays",
+    "summary": "STAAD.Pro analysis, IS 456 concrete design and structural drawings for a ground-plus-three RCC multipurpose hall, prepared for government approval submission.",
+    "scope": [
+      "3D RCC frame model in STAAD.Pro V8i with dead, live and load-combination cases",
+      "Beam, column and footing design to IS 456 (e.g. 375 × 600 mm beams with 4-#12 top and bottom bars)",
+      "Layout plans: column grid, footing layout, plinth-beam and floor-beam framing (S-01)",
+      "Plinth-beam reinforcement details and bar schedule (S-02)",
+      "Isolated footing reinforcement plans, sections and footing schedule (S-05)",
+      "Design basis on the drawings: M30 concrete, Fe 500 HYSD steel, SBC 150 kN/m² at 2.0 m depth, clear covers 40 / 30 / 20 / 50 mm (column / beam / slab / footing)"
+    ],
+    "codes": [
+      "IS 456"
+    ],
+    "software": [
+      "STAAD.Pro V8i"
+    ],
+    "sheets": [
+      {
+        "src": "assets/projects/g3-multipurpose-hall-karnal/cover.webp",
+        "caption": "3D structural model",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-multipurpose-hall-karnal/s01.webp",
+        "caption": "STAAD.Pro beam concrete design to IS 456",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-multipurpose-hall-karnal/s02.webp",
+        "caption": "Layout plans · S-01",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-multipurpose-hall-karnal/s03.webp",
+        "caption": "Plinth-beam reinforcement details · S-02",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/g3-multipurpose-hall-karnal/s04.webp",
+        "caption": "Footing reinforcement details · S-05",
+        "portrait": false
+      }
+    ],
+    "cover": "assets/projects/g3-multipurpose-hall-karnal/cover.webp",
+    "coverIndex": 0
+  },
+  {
+    "id": "public-toilet-block-india",
+    "title": "Public Toilet Block — RCC Design & Detailing",
+    "city": "India",
+    "category": "Commercial & Industrial",
+    "featured": false,
+    "size": "Single-storey RCC frame with roof water tanks",
+    "summary": "Structural design and reinforcement detailing for a government public-toilet block: RCC frame, isolated footings, beams and roof slab carrying overhead water tanks.",
+    "scope": [
+      "3D frame and reinforcement models of columns, beams and slabs",
+      "Footing layout, column and footing reinforcement details, column schedule and bar-bending schedule",
+      "Plinth-beam, roof-beam and roof-slab reinforcement layouts and sections",
+      "Coordination with the architectural plans, elevations and sections",
+      "Design basis on the drawings: M25 concrete, Fe 500 steel; roof tiles to IS 654 and waterproofing to IS 1346"
+    ],
+    "codes": [
+      "IS 654",
+      "IS 1346"
+    ],
+    "software": [],
+    "sheets": [
+      {
+        "src": "assets/projects/public-toilet-block-india/cover.webp",
+        "caption": "3D structural frame model",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/public-toilet-block-india/s01.webp",
+        "caption": "Reinforcement model of columns, beams and slabs",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/public-toilet-block-india/s02.webp",
+        "caption": "Architectural plans, elevations and sections",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/public-toilet-block-india/s03.webp",
+        "caption": "Footing layout, column details and bending schedule",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/public-toilet-block-india/s04.webp",
+        "caption": "Beam and slab reinforcement layouts and details",
+        "portrait": false
+      }
+    ],
+    "cover": "assets/projects/public-toilet-block-india/cover.webp",
+    "coverIndex": 0
   },
   {
     "id": "podium-steel-wall-cover-dubai",
@@ -2169,5 +2272,132 @@ window.PROJECTS = [
         "portrait": false
       }
     ]
+  },
+  {
+    "id": "etabs-four-cell-octagonal-structure",
+    "title": "Four-Cell Octagonal Concrete Structure — ETABS Model",
+    "city": "",
+    "category": "Structural Analysis & Modelling",
+    "featured": false,
+    "size": "Four octagonal cells on a braced column frame",
+    "summary": "ETABS model of four interconnected octagonal concrete cells supported on a braced column frame, with an adjoining truck-shade level at 22 ft.",
+    "scope": [
+      "3D model of the octagonal cell walls as piers, the supporting column frame and the truck-shade roof",
+      "Pier longitudinal reinforcing areas reviewed in plan at the truck-shade level (Z = 22 ft)",
+      "Dead-load displacement check of the full structure"
+    ],
+    "codes": [],
+    "software": [
+      "ETABS 18"
+    ],
+    "sheets": [
+      {
+        "src": "assets/projects/etabs-four-cell-octagonal-structure/cover.webp",
+        "caption": "ETABS model — plan and 3D views",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/etabs-four-cell-octagonal-structure/s01.webp",
+        "caption": "Plan at Z = 22 ft — pier longitudinal reinforcing areas",
+        "portrait": true
+      },
+      {
+        "src": "assets/projects/etabs-four-cell-octagonal-structure/s02.webp",
+        "caption": "3D view — dead-load displacements",
+        "portrait": true
+      }
+    ],
+    "cover": "assets/projects/etabs-four-cell-octagonal-structure/cover.webp",
+    "coverIndex": 0
+  },
+  {
+    "id": "multi-storey-frame-shear-wall-model",
+    "title": "Multi-Storey RC Frame with Shear Walls — 3D Model",
+    "city": "",
+    "category": "Structural Analysis & Modelling",
+    "featured": false,
+    "size": "5 × 4 bays · spans up to 7.5 m",
+    "summary": "3D analysis model of a multi-storey concrete frame with floor diaphragms meshed as shells and shear walls at the core and perimeter.",
+    "scope": [
+      "Grid A–F (4.75 / 7 / 7 / 7 / 4.5 m) by grid 1–5 (7.5 / 7.5 / 7.5 / 4.5 m)",
+      "Floor slabs meshed as shell elements; vertical wall elements at the core and on the perimeter",
+      "Deformed-shape review of the floor plates under load"
+    ],
+    "codes": [],
+    "software": [],
+    "sheets": [
+      {
+        "src": "assets/projects/multi-storey-frame-shear-wall-model/cover.webp",
+        "caption": "Plan and 3D deformed shape",
+        "portrait": false
+      },
+      {
+        "src": "assets/projects/multi-storey-frame-shear-wall-model/s01.webp",
+        "caption": "Typical floor plan and grid",
+        "portrait": true
+      },
+      {
+        "src": "assets/projects/multi-storey-frame-shear-wall-model/s02.webp",
+        "caption": "3D model — deformed floor plates",
+        "portrait": false
+      }
+    ],
+    "cover": "assets/projects/multi-storey-frame-shear-wall-model/cover.webp",
+    "coverIndex": 0
+  },
+  {
+    "id": "slab-fe-design-circular-opening",
+    "title": "Slab Finite-Element Design Around a Circular Opening",
+    "city": "",
+    "category": "Structural Analysis & Modelling",
+    "featured": false,
+    "size": "Single slab panel with circular opening",
+    "summary": "Finite-element slab design showing enveloped bottom-reinforcement intensity around a circular opening near a slab corner.",
+    "scope": [
+      "Slab meshed into finite elements with the opening modelled",
+      "Enveloped bottom-reinforcement intensity contours (in²/ft), Direction 1",
+      "Identification of reinforcement concentration at the opening edge for detailing"
+    ],
+    "codes": [],
+    "software": [],
+    "sheets": [
+      {
+        "src": "assets/projects/slab-fe-design-circular-opening/cover.webp",
+        "caption": "Bottom reinforcement intensity (enveloping), Direction 1",
+        "portrait": false
+      }
+    ],
+    "cover": "assets/projects/slab-fe-design-circular-opening/cover.webp",
+    "coverIndex": 0
+  },
+  {
+    "id": "rc-continuous-beam-en1992",
+    "title": "RC Continuous Beam with Cantilevers — EN 1992 Design",
+    "city": "",
+    "category": "Structural Analysis & Modelling",
+    "featured": false,
+    "size": "3 spans: 2.1 m cantilever · 6.5 m · 1.8 m cantilever",
+    "summary": "Analysis and design of a 250 × 500 mm reinforced-concrete beam over two supports with cantilevers at both ends, to EN 1992-1-1:2004.",
+    "scope": [
+      "Geometry: 6.5 m main span with 2.1 m and 1.8 m cantilevers, R 250 × 500 section, C30 concrete",
+      "Loading: permanent 20.3 kN/m and variable 15.5 kN/m plus self weight",
+      "Strength combination 1.35G + 1.5Q + 1.5RQ with deflection results",
+      "Member analysis and design in Tekla Tedds"
+    ],
+    "codes": [
+      "EN 1992-1-1:2004"
+    ],
+    "software": [
+      "Tekla Tedds"
+    ],
+    "sheets": [
+      {
+        "src": "assets/projects/rc-continuous-beam-en1992/cover.webp",
+        "caption": "Analysis page — geometry, loading and deflection",
+        "portrait": true
+      }
+    ],
+    "cover": "assets/projects/rc-continuous-beam-en1992/cover.webp",
+    "coverIndex": 0
   }
 ];
