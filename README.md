@@ -24,7 +24,7 @@ Double-click `site/index.html`, or run `python -m http.server 5500 --directory s
 
 ## Before you publish (placeholders to replace in `site/js/config.js`)
 * `email` (set to sureshankiya9982@gmail.com), `phone`, `credentials` (licence info — the box stays hidden while empty)
-* `siteUrl` — now https://sureshankiya.github.io/rex (change if you add a custom domain), then re-run `python tools/build_pages.py` (used by sitemap / share links)
+* `siteUrl` — now https://rexengineering.tech; after changing it, re-run `python tools/build_pages.py` (used by sitemap / share links)
 * optional `formEndpoint` (e.g. a Formspree URL) — the contact form then sends directly, with drawing uploads
 * `principal` — the name shown on the About page (set `""` to hide)
 

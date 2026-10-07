@@ -11,7 +11,7 @@ window.FIRM = {
   /* Contact details shown across the site (header, footer, contact form). */
   email: "sureshankiya9982@gmail.com",
   phone: "",                       // e.g. "(555) 123-4567"  (hidden while empty)
-  siteUrl: "https://sureshankiya.github.io/rex",   // used for sitemap.xml / canonical links (tools/build_pages.py)
+  siteUrl: "https://rexengineering.tech",   // used for sitemap.xml / canonical links (tools/build_pages.py)
   serviceArea: "Remote structural engineering for projects across the United States, India and internationally",
 
   /* Optional: a form-handling endpoint (e.g. Formspree / Web3Forms URL).  When set, the
