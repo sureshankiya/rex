@@ -33,7 +33,6 @@
     ["projects.html", "Projects", "projects"],
     ["services.html", "Services", "services"],
     ["faq.html", "FAQ", "faq"],
-    ["tools.html", "Tools", "tools"],
     ["about.html", "About", "about"],
     ["contact.html", "Contact", "contact"]
   ];
@@ -330,22 +329,6 @@
     renderFiverrBadge($("#fiverrBadgeAbout"));
   }
 
-  /* Tools hub: point each app button at its published URL, or show it as coming soon */
-  function initTools() {
-    var apps = F.apps || {};
-    $$("[data-app]").forEach(function (a) {
-      var url = apps[a.getAttribute("data-app")];
-      if (url) { a.setAttribute("href", url); return; }
-      a.removeAttribute("href");
-      a.removeAttribute("target");
-      a.setAttribute("aria-disabled", "true");
-      a.textContent = "Link coming soon";
-      var note = document.createElement("small");
-      note.innerHTML = 'Want early access? <a href="' + BASE + 'contact.html">Ask us</a>.';
-      a.parentNode.appendChild(note);
-    });
-  }
-
   /* FAQ: open the question named in the URL hash, and publish FAQPage structured data built from the page */
   function initFaq() {
     function openHash() {
@@ -373,5 +356,4 @@
   if (page === "project-legacy") initLegacyProject();
   if (page === "contact") initContact();
   if (page === "faq") initFaq();
-  if (page === "tools") initTools();
 })();

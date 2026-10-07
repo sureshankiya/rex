@@ -4,7 +4,7 @@ Static website (plain HTML / CSS / JavaScript, no build tools needed to *view* i
 
 ```
 site/                      <- the website; upload THIS folder to any static host
-  index.html projects.html services.html faq.html tools.html about.html contact.html 404.html
+  index.html projects.html services.html faq.html about.html contact.html 404.html
   projects/<id>.html       <- one generated page per project (do not edit by hand)
   sitemap.xml robots.txt   <- generated
   js/config.js             <- firm name, contact, Fiverr stats, testimonials, codes, software  (EDIT THIS FIRST)
