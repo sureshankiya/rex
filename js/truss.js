@@ -1,5 +1,5 @@
 /* Truss geometry & count estimator.
-   Ported from the original truss-calculator app; the maths and the diagrams are unchanged.
+   Ported from the original truss-calculator app (truss count rounding and the Howe web layout corrected).
    Geometry and material count only - NOT a structural design of the truss members. */
 (function () {
   "use strict";
@@ -19,11 +19,12 @@
 
   function update() {
     var type = typeSelect.value;
-    var L = parseFloat(spanInput.value) || 0;
-    var P = parseFloat(pitchInput.value) || 0;
-    var Oh = parseFloat(overhangInput.value) || 0;
-    var BL = parseFloat(lengthInput.value) || 0;
-    var Sc = parseFloat(spacingInput.value) || 0; // inches
+    function num(el) { return Math.max(0, parseFloat(el.value) || 0); }   // negative entries treated as 0
+    var L = num(spanInput);
+    var P = num(pitchInput);
+    var Oh = num(overhangInput);
+    var BL = num(lengthInput);
+    var Sc = num(spacingInput); // inches
 
     var Run = L / 2;
     var Rise = Run * (P / 12);
@@ -32,8 +33,8 @@
     var RafterWithOverhang = Math.sqrt(Math.pow(Run + Oh, 2) + Math.pow(Rise + OverhangDrop, 2));
     var TotalWidth = L + 2 * Oh;
 
-    var spacingFt = Sc / 12;
-    var qty = BL > 0 && spacingFt > 0 ? Math.ceil(BL / spacingFt) + 1 : 0;
+    // trusses = spaces + 1; work in inches and allow for floating-point error (e.g. 480 / 19.2)
+    var qty = BL > 0 && Sc > 0 ? Math.ceil(BL * 12 / Sc - 1e-9) + 1 : 0;
 
     function ft(v) { return v.toFixed(2) + " ft"; }
     resultsBody.innerHTML =
@@ -53,8 +54,8 @@
   }
 
   function draw(type, L, Rise, Oh, OverhangDrop) {
-    if (L <= 0) return;
     svg.innerHTML = "";
+    if (L <= 0) return;
     var scale = 100 / L;
     var sRise = Rise * scale, sOh = Oh * scale, sOhDrop = OverhangDrop * scale;
     svg.setAttribute("viewBox", [-sOh - 5, -sRise - 5, 100 + 2 * sOh + 10, sRise + sOhDrop + 10].join(" "));
@@ -96,12 +97,12 @@
       line(b2, 0, t2.x, t2.y);
     } else if (type === "howe") {
       b1 = 25; b2 = 50; b3 = 75; t1 = { x: 25, y: -sRise / 2 }; t3 = { x: 75, y: -sRise / 2 };
+      // verticals at the quarter points; diagonals slope down from the top-chord panel points to mid-span (Howe)
       line(b2, 0, apex.x, apex.y);
       line(b1, 0, t1.x, t1.y);
       line(b3, 0, t3.x, t3.y);
-      line(leftSup.x, leftSup.y, b1, 0);
-      line(b1, 0, apex.x, apex.y);
-      line(b3, 0, apex.x, apex.y);
+      line(t1.x, t1.y, b2, 0);
+      line(t3.x, t3.y, b2, 0);
     } else if (type === "king") {
       line(50, 0, apex.x, apex.y);
     } else if (type === "queen") {

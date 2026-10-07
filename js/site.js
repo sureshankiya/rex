@@ -252,18 +252,31 @@
     var pre = new URLSearchParams(location.search).get("project");
     if (pre) $("#message").value = "Re: " + pre + "\n\n";
     var upload = $("#uploadRow");
-    if (upload) upload.hidden = !F.formEndpoint || F.formUploads === false;
+    var uploads = !!F.formEndpoint && F.formUploads !== false;
+    if (upload) {
+      upload.hidden = !uploads;
+      $$("input[type=file]", upload).forEach(function (i) { i.disabled = !uploads; });  // disabled fields are not submitted
+    }
     var out = $("#status");
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       var d = new FormData(form);
-      if (!d.get("name") || !d.get("email") || !d.get("message")) {
+      if (!String(d.get("name") || "").trim() || !String(d.get("email") || "").trim() || !String(d.get("message") || "").trim()) {
         out.textContent = "Please add your name, email and a few project details.";
+        return;
+      }
+      if (!form.elements.email.checkValidity()) {
+        out.textContent = "Please check your email address - we need it to reply.";
+        form.elements.email.focus();
         return;
       }
       if (F.formEndpoint) {
         out.textContent = "Sending...";
-        fetch(F.formEndpoint, { method: "POST", body: d, headers: { Accept: "application/json" } })
+        var json = {};
+        d.forEach(function (v, k) { if (typeof v === "string") json[k] = v; });
+        var req = uploads ? { method: "POST", body: d, headers: { Accept: "application/json" } }
+          : { method: "POST", body: JSON.stringify(json), headers: { Accept: "application/json", "Content-Type": "application/json" } };
+        fetch(F.formEndpoint, req)
           .then(function (r) {
             return r.json().catch(function () { return {}; }).then(function (j) {
               if (!r.ok || j.success === false || j.success === "false") throw new Error(j.message || r.status);
